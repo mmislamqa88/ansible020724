@@ -11,3 +11,8 @@
       service:
         name: apache2
         state: restarted
+
+    - name: Uninstall apache2
+      apt:
+        name: apache2
+        state: absent
