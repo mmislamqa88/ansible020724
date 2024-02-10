@@ -2,4 +2,4 @@
 webpackonubuntu: apache2
 webpackonredhat: httpd
 javapackageubuntu: openjdk-17-jdk
-javapackageredhat: java-1.8.0-openjdk
+javapackageredhat: java-1.8.0-openjdk-devel
