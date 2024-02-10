@@ -1,16 +1,16 @@
 ---
-- hosts: all
+- hosts: mywebservers
   become: yes
   tasks:
     - name: I want to install webserver on Ubutntu nodes
       apt:
-        name: apache2
+        name: "{{myUbuntuWebpack}}"
         state: present
       when: ansible_os_family == "Debian"
 
     - name: I want to start apache2 
       service:
-        name: apache2
+        name: "{{myUbuntuWebpack}}"
         state: started
       when: ansible_os_family == "Debian"
 
