@@ -1,3 +1,4 @@
 ---
 webpackonubuntu: apache2
 webpackonredhat: httpd
+javapackage: openjdk-17-jdk

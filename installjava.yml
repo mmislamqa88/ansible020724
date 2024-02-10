@@ -1,0 +1,15 @@
+---
+- hosts: 
+  become: yes
+  tasks: 
+    - name: Install java in Ubutntu
+      apt: 
+        name: "{{javapackage}}"
+        state: present 
+      when: ansible_os_family == "Debian"
+
+    - name: Install java on RedHat 
+      yum: 
+        name: "{{javapackage}}"
+        state: present 
+      when: ansible_os_family == "RedHat"
