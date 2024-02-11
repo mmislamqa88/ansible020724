@@ -11,7 +11,7 @@
   - name: i want to copy a file
     copy: 
       src: mytestfile.txt
-      dest: /home/ansible/mytxtfile.txt
+      dest: /home/ubuntu/mytxtfile.txt
 
   - name: i want to handle dynamic file inbox.j2
     template: 
