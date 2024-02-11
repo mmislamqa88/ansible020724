@@ -6,3 +6,4 @@
     file: 
       path: /home/ubuntu/myfile.txt
       state: touch
+    ignore_error: true 
