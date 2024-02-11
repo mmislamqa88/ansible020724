@@ -4,4 +4,9 @@
   tasks:
   - name: i want to run shell command
     command: hostname -f 
+    register: myhostname
+
+  - name: i want to display the result 
+    debug: 
+      msg: "{{myhostname}}"
      
