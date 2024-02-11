@@ -1,0 +1,19 @@
+---
+- hosts: 172.31.47.241
+  become: yes
+  tasks: 
+  - include_tasks: myfile.yml
+  - name: i want to install a webserver
+    apt: 
+      name: apache2
+      state: present
+
+  - name: i want to copy a file
+    copy: 
+      src: mytestfile.txt
+      dest: /home/ansible/mytxtfile.txt
+
+  - name: i want to handle dynamic file inbox.j2
+    template: 
+      src: myindex.j2
+      dest: /var/www/html/index.j2
