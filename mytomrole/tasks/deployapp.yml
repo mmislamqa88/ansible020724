@@ -1,0 +1,6 @@
+--- 
+- name: deploy my application
+  get_url:
+     url: https://mys3bucket020324.s3.amazonaws.com/gameoflife.war
+     dest: /opt/tomcat/webapps/gameoflife.war
+     force_basic_auth: yes 
