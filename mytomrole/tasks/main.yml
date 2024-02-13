@@ -6,4 +6,4 @@
 - include_tasks: permission.yml
 - include_tasks: mytomcatDashboard.yml
 - include_tasks: starttomcat.
-- include_tasks: deploy.yml
+- include_tasks: deployapp.yml
